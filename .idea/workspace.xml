@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84df242b-7604-4262-bc6a-e2a086f79d85" name="Changes" comment="Versão 1 &#10;&#10;- Media player rolando (deixar como backup)" />
+    <list default="true" id="84df242b-7604-4262-bc6a-e2a086f79d85" name="Changes" comment="Versão 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662358417894</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Versão 1">
+      <created>1666095586487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666095586487</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +239,7 @@
       <path value="$PROJECT_DIR$/git" />
     </ignored-roots>
     <MESSAGE value="Versão 1 &#10;&#10;- Media player rolando (deixar como backup)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versão 1 &#10;&#10;- Media player rolando (deixar como backup)" />
+    <MESSAGE value="Versão 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versão 1" />
   </component>
 </project>
