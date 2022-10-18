@@ -211,7 +211,7 @@ def play_song(song):
 
 # Menu Functions
 def add_song():
-    song = filedialog.askopenfilename(initialdir='C:/Users/otto.rodrigues/PycharmProjects/tcc/songs/',
+    song = filedialog.askopenfilename(initialdir='songs/',
                                       title="Choose A Song",
                                       filetypes=(('mp3 Files', '*.mp3'),))
     song = song.replace('C:/Users/otto.rodrigues/PycharmProjects/tcc/songs/', '')

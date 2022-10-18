@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84df242b-7604-4262-bc6a-e2a086f79d85" name="Changes" comment="- Retirando imagens que não são mais usadas">
+    <list default="true" id="84df242b-7604-4262-bc6a-e2a086f79d85" name="Changes" comment="- Retirando músicas que não são mais usadas&#10;- Retirando path absoluto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newPlayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/newPlayer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/If.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/If.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/Sampa.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/Stand-By-Me.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/a-primeira-vista.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/a-primeira-vista.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/hoje.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/hoje.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/sampa.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/vento-no-litoral.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/songs/vento-no-litoral.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666096003374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Retirando músicas que não são mais usadas&#10;- Retirando path absoluto">
+      <created>1666096392892</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666096392892</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +258,7 @@
     <MESSAGE value="Versão 1 &#10;&#10;- Media player rolando (deixar como backup)" />
     <MESSAGE value="Versão 1" />
     <MESSAGE value="- Retirando imagens que não são mais usadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Retirando imagens que não são mais usadas" />
+    <MESSAGE value="- Retirando músicas que não são mais usadas&#10;- Retirando path absoluto" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Retirando músicas que não são mais usadas&#10;- Retirando path absoluto" />
   </component>
 </project>
