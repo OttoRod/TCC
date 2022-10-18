@@ -31,7 +31,6 @@ converted_duration: ''
 
 
 def get_beats(song):
-    # drums = f'C:/Users/otto.rodrigues/output/{song}/drums.wav'
     drums = f'output/{song}/drums.wav'
 
     # Librosa Process - Beat Detection
@@ -42,7 +41,6 @@ def get_beats(song):
 
 
 def get_song_duration(song):
-    # song = f'C:/Users/otto.rodrigues/output/{song}/vocals.wav'
     song = f'output/{song}/vocals.wav'
     y, sr = librosa.load(song)
     duration = librosa.get_duration(y=y, sr=sr)
@@ -54,10 +52,8 @@ def get_song_duration(song):
 def get_voice_energy(song, index):
 
     if index == 0:
-        # asset = f'C:/Users/otto.rodrigues/output/{song}/vocals.wav'
         asset = f'output/{song}/vocals.wav'
     else:
-        # asset = f'C:/Users/otto.rodrigues/output/{song}/other.wav'
         asset = f'output/{song}/other.wav'
 
     # Librosa Process - Voice Energy
@@ -162,7 +158,6 @@ def meter_other(current_time, pace):
 def slide(x):
     # slider_label.config(text=f'{int(my_slider.get())} of {int(song_length)}')
     song = song_box.get(ACTIVE)
-    # song = f'C:/Users/otto.rodrigues/songs/{song}.mp3'
     song = f'songs/{song}.mp3'
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0, start=int(my_slider.get()))
@@ -233,7 +228,6 @@ def play():
     stopped = False
 
     song = song_box.get(ACTIVE)
-    # song = f'C:/Users/otto.rodrigues/songs/{song}.mp3'
     song = f'songs/{song}.mp3'
     current_song = song_box.get(song_box.curselection()[0])
 
