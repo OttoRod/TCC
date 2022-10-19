@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84df242b-7604-4262-bc6a-e2a086f79d85" name="Changes" comment="- Refatorando path relativo no add_songs()">
+    <list default="true" id="84df242b-7604-4262-bc6a-e2a086f79d85" name="Changes" comment="- changes in xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +32,9 @@
     </excluded-from-favorite>
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/newPlayer.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +81,6 @@
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="tcc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -86,9 +88,10 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -119,15 +122,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="newPlayer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="newPlayer" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\otto.rodrigues\PycharmProjects\tcc\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
@@ -182,9 +185,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.newPlayer" />
+      <item itemvalue="Python.detectVoiceInWave (1)" />
+      <item itemvalue="Python.mediaPlayer" />
+      <item itemvalue="Python.process_audio" />
+      <item itemvalue="Python.vuMeter" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.newPlayer" />
         <item itemvalue="Python.vuMeter" />
         <item itemvalue="Python.process_audio" />
         <item itemvalue="Python.mediaPlayer" />
@@ -229,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666096392892</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- changes in xml">
+      <created>1666145942095</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666145942095</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +275,7 @@
     <MESSAGE value="Versão 1" />
     <MESSAGE value="- Retirando imagens que não são mais usadas" />
     <MESSAGE value="- Retirando músicas que não são mais usadas&#10;- Retirando path absoluto" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Retirando músicas que não são mais usadas&#10;- Retirando path absoluto" />
+    <MESSAGE value="- changes in xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes in xml" />
   </component>
 </project>
