@@ -8,6 +8,7 @@ from tkinter import filedialog
 from mutagen.mp3 import MP3
 import tkinter.ttk as ttk
 import librosa
+from serial import Serial
 
 root = Tk()
 root.title('Otto Media Player')
@@ -15,6 +16,9 @@ root.geometry('500x630')
 
 # Initialize Pygame Mixer
 pygame.mixer.init()
+
+# PySerial Configuration
+my_serial = Serial("COM8", baudrate=9600, timeout=0.01)
 
 # Global Variables
 stopped = False
@@ -89,7 +93,7 @@ def load_analyses():
     song = song_box.get(ACTIVE)
 
     global beats_sec
-    beats_sec = get_beats(song)
+    beats_sec = get_beats(song).tolist()
 
     global rms_voice, pace_voice
     rms_voice, pace_voice = get_voice_energy(song, 0)
@@ -107,8 +111,12 @@ def load_analyses():
 def hit_beat(current_time):
     # print(current_time)
     for beat in beats_sec:
+        index = str(beats_sec.index(beat) + 1)  # avoiding to send zero
         if (beat - 0.100) < current_time < (beat + 0.100):
             get_beat.config(image=yes_beat)
+            str_beat = 'beat' + index
+            #  print(str_beat)
+            my_serial.write(str_beat.encode("UTF-8"))
             return
 
     get_beat.config(image=no_beat)
@@ -116,25 +124,49 @@ def hit_beat(current_time):
 
 def meter_vocal(current_time, pace):
     index = round(current_time/pace)
+    str_voice = 'voice'
 
     if rms_voice[index] < 0.1:
         vocal_meter.config(image=vol0)
         get_voice.config(image=no_beat)
+
+        str_no_voice = 'no-voice'
+        my_serial.write(str_no_voice.encode("UTF-8"))
+
     elif 0.2 <= rms_voice[index] <= 0.2:
         vocal_meter.config(image=vol1)
         get_voice.config(image=yes_beat)
+
+        str_voice += '1'
+        my_serial.write(str_voice.encode("UTF-8"))
+
     elif 0.2 <= rms_voice[index] <= 0.4:
         vocal_meter.config(image=vol2)
-        get_voice.config(image=yes_beat)
+        vocal_meter.config(image=vol2)
+
+        str_voice += '2'
+        my_serial.write(str_voice.encode("UTF-8"))
+
     elif 0.4 <= rms_voice[index] <= 0.6:
         vocal_meter.config(image=vol3)
         get_voice.config(image=yes_beat)
+
+        str_voice += '3'
+        my_serial.write(str_voice.encode("UTF-8"))
+
     elif 0.6 <= rms_voice[index] <= 0.8:
         vocal_meter.config(image=vol4)
         get_voice.config(image=yes_beat)
+
+        str_voice += '4'
+        my_serial.write(str_voice.encode("UTF-8"))
+
     elif 0.8 <= rms_voice[index] <= 1:
         vocal_meter.config(image=vol5)
         get_voice.config(image=yes_beat)
+
+        str_voice += '5'
+        my_serial.write(str_voice.encode("UTF-8"))
 
 
 def meter_other(current_time, pace):
